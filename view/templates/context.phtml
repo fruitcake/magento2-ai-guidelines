@@ -41,7 +41,8 @@ This is a Magento 2 application using the versions below. Ensure that you are us
     <?php $remaining = $context->getRemainingThirdPartyModulesCount(); ?>
     <?php if ($remaining > 0): ?>
 
-*...and <?= $remaining ?> more third-party modules*
+*...and <?= $remaining ?> more third-party modules. Run `bin/magento module:status` to see all installed modules.*
+    <?php else: ?>*
     <?php endif; ?>
 
 <?php endif; ?>
