@@ -1,0 +1,6 @@
+autoloaders_psr4:
+  Fruitcake\AiGuidelines\: '%module%'
+
+commands:
+  customCommands:
+    - 'Fruitcake\AiGuidelines\Console\Magerun\GenerateAiContext'
