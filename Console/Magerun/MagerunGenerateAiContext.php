@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Fruitcake\AiGuidelines\Console\Command;
+namespace Fruitcake\AiGuidelines\Console\Magerun;
 
-use Magento\Framework\App\ObjectManager;
 use Fruitcake\AiGuidelines\Service\AiContextGenerator;
+use N98\Magento\Command\AbstractMagentoCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class GenerateAiContext extends Command
+class MagerunGenerateAiContext extends AbstractMagentoCommand
 {
     private ?AiContextGenerator $generator;
 
@@ -20,22 +20,16 @@ class GenerateAiContext extends Command
             ->setDescription('Generate CLAUDE.md file with relevant project context for AI assistance');
     }
 
-    /**
-     * Inject dependencies on demand to avoid loading for every command
-     *
-     * @return void
-     */
-    public function inject()
+    public function inject(AiContextGenerator $generator)
     {
-        $this->generator = ObjectManager::getInstance()->get(AiContextGenerator::class);
+        $this->generator = $generator;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $this->inject();
+        $output->writeln('Generating AI context from Magerun2...');
 
         $result = $this->generator->generate($output);
-
         if (!$result) {
             return Command::FAILURE;
         }

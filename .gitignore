@@ -1,0 +1,5 @@
+.idea/
+vendor/
+/magento*
+.phpunit.result.cache
+composer.lock

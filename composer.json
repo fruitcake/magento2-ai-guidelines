@@ -1,0 +1,39 @@
+{
+  "name": "fruitcake/magento2-ai-guidelines",
+  "description": "Generate AI Guidelines for Magento 2 projects.",
+  "type": "library",
+  "keywords": [
+    "ai",
+    "claude code",
+    "magento",
+    "magento2",
+    "magerun2",
+    "dev"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fruitcake",
+      "email": "info@fruitcake.nl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Fruitcake\\AiGuidelines\\": ""
+    }
+  },
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "n98/magerun2": "^4",
+    "n98/magerun2-test-framework": "^2",
+    "phpunit/phpunit": "^9"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
