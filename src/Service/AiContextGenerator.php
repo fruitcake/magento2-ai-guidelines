@@ -61,10 +61,26 @@ class AiContextGenerator
         // Make context available to template
         $context = $this->contextData;
 
+        $content = [];
+
         // Render template
         ob_start();
         include $templatePath;
-        return ob_get_clean();
+        $content = ob_get_clean();
+
+        $guidelines = [
+            'magento',
+        ];
+
+        if ($context->isHyvaInstalled()) {
+            $guidelines[] = 'hyva';
+        }
+
+        foreach ($guidelines as $guideline) {
+            $content .= "\n" . file_get_contents(__DIR__ . '/../../guidelines/'.basename($guideline) .'.md');
+        }
+
+        return '<magento-ai-guidelines>' . $content . '</magento-ai-guidelines>';
     }
 
     private function mergeContent(string $existingContent, string $generatedContent): string
