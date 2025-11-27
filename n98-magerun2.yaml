@@ -1,5 +1,5 @@
 autoloaders_psr4:
-  Fruitcake\AiGuidelines\: '%module%'
+  Fruitcake\AiGuidelines: '%module%/src'
 
 commands:
   customCommands:

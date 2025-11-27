@@ -4,7 +4,7 @@ Generate a CLAUDE.md file with project context for AI assistance.
 
 ## Installation
 
-Option 1: Put this module in app/code in your project and run setup:upgrade
+Option 1: Put the contents of src/ in app/code in your project and run setup:upgrade
 
 Option 2: Install as Magerun2 module:
  - Clone this library in `~/.n98-magerun2/modules`

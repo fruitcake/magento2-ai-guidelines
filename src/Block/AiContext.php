@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fruitcake\AiGuidelines\Block;
+namespace Fruitcake\AiFiles\src\Block;
 
 use Fruitcake\AiFiles\Model\ContextDataProvider;
 use Magento\Framework\View\Element\Template;

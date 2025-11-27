@@ -4,7 +4,7 @@
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
     <testsuites>
         <testsuite name="Magerun">
-            <directory>Test/Console/Magerun</directory>
+            <directory>tests/Console/Magerun</directory>
         </testsuite>
     </testsuites>
 </phpunit>

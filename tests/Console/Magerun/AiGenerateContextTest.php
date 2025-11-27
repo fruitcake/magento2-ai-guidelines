@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Fruitcake\AiGuidelines\Test\Console\Magerun;
 
-use Fruitcake\AiGuidelines\Console\Magerun\MagerunGenerateAiContext;
+use Fruitcake\AiFiles\src\Console\Magerun\MagerunGenerateAiContext;
 use N98\Magento\Command\PHPUnit\TestCase;
 use Symfony\Component\Console\Tester\CommandTester;
 
