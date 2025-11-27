@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fruitcake\AiFiles\src\Console\Command;
+namespace Fruitcake\AiGuidelines\Console\Command;
 
-use Fruitcake\AiFiles\src\Service\AiContextGenerator;
+use Fruitcake\AiGuidelines\Service\AiContextGenerator;
 use Magento\Framework\App\ObjectManager;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

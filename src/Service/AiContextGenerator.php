@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Fruitcake\AiFiles\src\Service;
 
-use Fruitcake\AiFiles\src\Model\ContextDataProvider;
+use Fruitcake\AiGuidelines\Model\ContextDataProvider;
 use Magento\Framework\Filesystem\DirectoryList;
 use Magento\Framework\Module\Dir;
 use Magento\Framework\Module\Dir\Reader as ModuleDirReader;

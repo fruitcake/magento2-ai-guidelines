@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Fruitcake\AiFiles\src\Model;
+namespace Fruitcake\AiGuidelines\Model;
 
 use Magento\Framework\App\ProductMetadataInterface;
 use Magento\Framework\Composer\ComposerInformation;

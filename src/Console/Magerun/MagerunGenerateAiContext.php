@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Fruitcake\AiFiles\src\Console\Magerun;
+namespace Fruitcake\AiGuidelines\Console\Magerun;
 
-use Fruitcake\AiFiles\src\Service\AiContextGenerator;
+use Fruitcake\AiFiles\Service\AiContextGenerator;
 use N98\Magento\Command\AbstractMagentoCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
